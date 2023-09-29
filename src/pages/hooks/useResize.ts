@@ -3,7 +3,7 @@ import { ResizeObserver as Polyfill } from '@juggle/resize-observer';
 
 const ResizeObserver =
   typeof window !== 'undefined' && 'ResizeObserver' in window
-    ? (window as any).ResizeObserver // eslint-disable-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types
+    ? (window as any).ResizeObserver
     : Polyfill;
 
 export interface UseResizeResult {
