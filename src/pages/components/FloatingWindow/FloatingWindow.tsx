@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 import Paper from '@mui/material/Paper';
 import { IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import useResize from '../../hooks/useResize';
+import useResize from '@/hooks/useResize';
 
 interface FloatingWindowProps {
   title: string;
